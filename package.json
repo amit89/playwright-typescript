@@ -1,0 +1,24 @@
+{
+  "name": "playwright-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": " npx playwright test",
+    "test-ui": "npx plawright test --ui" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amit89/playwright-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amit89/playwright-typescript/issues"
+  },
+  "homepage": "https://github.com/amit89/playwright-typescript#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.35.1"
+  }
+}
