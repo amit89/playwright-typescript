@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": " npx playwright test",
-    "test-ui": "npx plawright test --ui" 
+    "test-ui": "npx playwright test --ui"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/amit89/playwright-typescript#readme",
   "devDependencies": {
-    "@playwright/test": "^1.35.1"
+    "@playwright/test": "^1.37.1"
+  },
+  "dependencies": {
+    "allure-playwright": "^2.4.0"
   }
 }

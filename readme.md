@@ -44,3 +44,12 @@ npx playwright codegen
     use:{
     headless:false
   }
+
+
+### Docker
+    For building image from Docker run below command, where path to Dockerfile must be provided after -f tag and name of the image must be provided after -t tag.
+        docker build . -f Dockerfile -t playwrite-ts
+    
+    Once the image is generated we can run the image to spawn container and run scrips using below command. In Below Command "playContainer" is name of the container created using "playtest" image.
+        docker run --name playContainer playwrite-ts
+

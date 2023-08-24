@@ -10,19 +10,22 @@ export default class LoginPage extends HomePage{
 
     async enterUserName(userName: string): Promise<void> {
        await this.page.locator(locators.USERNAME_FIELD)
-            .type(userName);
+            .fill(userName);
     }
 
     async enterPassword(password: string): Promise<void>{
 
         await this.page.locator(locators.PASSWORD_FIELD)
-            .type(password);
+            .fill(password);
     }
 
     async clickLoginButton(): Promise<void> {
         await Promise.all([
-            this.page.waitForURL(/.*profile/),
             await this.page.locator(locators.LOGIN_BUTTON).click()
         ]);
+    }
+
+    async getInvalidLoginMessage(): Promise<string | null> {
+        return await this.page.locator(locators.INVALID_LOGIN_MESSAGE).textContent();
     }
 }
